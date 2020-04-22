@@ -4,4 +4,8 @@ Want to play? Go to https://cryptoplayer.one and read our [Game Guide](/HowToPla
 
 ## About
 
-Game: https://www.youtube.com/watch?
+Game: https://www.youtube.com/watch?v=f91oYEWmLWo
+
+Behind the Scenes: https://www.youtube.com/watch?v=vcFf9fDgmfo
+
+Robots Stream: https://www.youtube.com/watc
