@@ -8,4 +8,6 @@ Game: https://www.youtube.com/watch?v=f91oYEWmLWo
 
 Behind the Scenes: https://www.youtube.com/watch?v=vcFf9fDgmfo
 
-Robots Stream: https://www.youtube.com/watc
+Robots Stream: https://www.youtube.com/watch?v=mMCljzH3lVQ
+
+A rock-paper-scissors game where the player does micropayments on the Raiden 
