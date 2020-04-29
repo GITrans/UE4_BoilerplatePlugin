@@ -22,4 +22,4 @@ This is not production ready - play at your own risk if you want to give a hand 
 
 ## How To Play
 
-- install and run a [Raiden Network node](https://raiden-network.readthedocs.io/en/stable/overview_and_guide.htm
+- install and run a [Raiden Network node](https://raiden-network.readthedocs.io/en/stable/overview_and_guide.html). The current game version only supports the [Red Eyes release](https://github.com/raiden-network/raiden/releases/tag/v
