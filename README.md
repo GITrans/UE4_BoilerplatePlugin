@@ -20,4 +20,6 @@ Unlimited number of users, each user chooses a `player` (`Dark Vader` / `Blue Yo
 This is not production ready - play at your own risk if you want to give a hand at testing the game or the new Raiden Network release.
 
 
-## How
+## How To Play
+
+- install and run a [Raiden Network node](https://raiden-network.readthedocs.io/en/stable/overview_and_guide.htm
