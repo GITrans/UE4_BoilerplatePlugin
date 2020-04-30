@@ -23,4 +23,10 @@ This is not production ready - play at your own risk if you want to give a hand 
 ## How To Play
 
 - install and run a [Raiden Network node](https://raiden-network.readthedocs.io/en/stable/overview_and_guide.html). The current game version only supports the [Red Eyes release](https://github.com/raiden-network/raiden/releases/tag/v0.100.1).
-- go to http://cryptoplayer.one/ and follow the instructions, which will ask you to give the game domain access to your Raiden Node (!this is risky, because the game **WILL** make payments on your behalf, so do not d
+- go to http://cryptoplayer.one/ and follow the instructions, which will ask you to give the game domain access to your Raiden Node (!this is risky, because the game **WILL** make payments on your behalf, so do not deposit more tokens than you are willing to lose)
+
+
+## Built on
+
+- https://raiden.network
+- h
