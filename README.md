@@ -29,4 +29,8 @@ This is not production ready - play at your own risk if you want to give a hand 
 ## Built on
 
 - https://raiden.network
-- h
+- https://www.makewonder.com's Dash & Cue robots.
+
+## Components
+
+`GameGuardian Server`, `GameGuardian Raiden Node` & `Gam
