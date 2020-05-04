@@ -33,4 +33,8 @@ This is not production ready - play at your own risk if you want to give a hand 
 
 ## Components
 
-`GameGuardian Server`, `GameGuardian Raiden Node` & `Gam
+`GameGuardian Server`, `GameGuardian Raiden Node` & `GameGuardian Client` are running on an Ubuntu Virtual Private Server
+
+### `Dark Vader RobotServer` & `Blue Yoda RobotServer`
+
+- Python & Gun
