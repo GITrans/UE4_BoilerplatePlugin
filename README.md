@@ -37,4 +37,10 @@ This is not production ready - play at your own risk if you want to give a hand 
 
 ### `Dark Vader RobotServer` & `Blue Yoda RobotServer`
 
-- Python & Gun
+- Python & Gunicorn
+- [WonderPy SDK](https://github.com/playi/WonderPy)
+- live streamed
+
+### `GameGuardian Server`
+
+- [Loopback-based server
