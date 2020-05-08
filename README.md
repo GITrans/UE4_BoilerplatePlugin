@@ -47,4 +47,7 @@ This is not production ready - play at your own risk if you want to give a hand 
 - manages the games
 - keeps track of user chosen moves
 - calculates the winners
-- connects to the `GameGuardian Raiden Node` to verify received payments & to send the rewards to the
+- connects to the `GameGuardian Raiden Node` to verify received payments & to send the rewards to the winners
+- sends the commands to the robots, to play out the game duel accordingly
+
+### `GameGuardian Raiden 
