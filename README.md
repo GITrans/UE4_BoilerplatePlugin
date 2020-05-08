@@ -50,4 +50,10 @@ This is not production ready - play at your own risk if you want to give a hand 
 - connects to the `GameGuardian Raiden Node` to verify received payments & to send the rewards to the winners
 - sends the commands to the robots, to play out the game duel accordingly
 
-### `GameGuardian Raiden 
+### `GameGuardian Raiden Node`
+
+- receives user payments & sends rewards
+
+### `Game Client`
+
+- [Vue.js](https://vuejs.org) based
