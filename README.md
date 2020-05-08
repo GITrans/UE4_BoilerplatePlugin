@@ -43,4 +43,7 @@ This is not production ready - play at your own risk if you want to give a hand 
 
 ### `GameGuardian Server`
 
-- [Loopback-based server
+- [Loopback-based server](https://github.com/strongloop/loopback-next)
+- manages the games
+- keeps track of user chosen moves
+- calcula
