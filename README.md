@@ -46,4 +46,5 @@ This is not production ready - play at your own risk if you want to give a hand 
 - [Loopback-based server](https://github.com/strongloop/loopback-next)
 - manages the games
 - keeps track of user chosen moves
-- calcula
+- calculates the winners
+- connects to the `GameGuardian Raiden Node` to verify received payments & to send the rewards to the
