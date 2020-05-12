@@ -56,4 +56,6 @@ This is not production ready - play at your own risk if you want to give a hand 
 
 ### `Game Client`
 
-- [Vue.js](https://vuejs.org) based
+- [Vue.js](https://vuejs.org) based client that:
+- sends the encrypted (hashed) `move` data to the `GameGuardian Server` after receiving a payment identifier
+- co
