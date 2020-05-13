@@ -60,4 +60,5 @@ This is not production ready - play at your own risk if you want to give a hand 
 - sends the encrypted (hashed) `move` data to the `GameGuardian Server` after receiving a payment identifier
 - connects to the `user's Raiden Node` if given access, to send the payment for the chosen move with the above payment identifier
 - controls the game time intervals based on the received values from the `GameGuardian Server`
-- sends the unencrypted mo
+- sends the unencrypted move data to the `GameGuardian Server` after the first stage of the game is finalized
+- sends a signal to 
