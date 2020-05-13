@@ -58,4 +58,4 @@ This is not production ready - play at your own risk if you want to give a hand 
 
 - [Vue.js](https://vuejs.org) based client that:
 - sends the encrypted (hashed) `move` data to the `GameGuardian Server` after receiving a payment identifier
-- co
+- connects to the `user's Raiden Node` if given access, to send the payment for the chosen move with the above payment ide
