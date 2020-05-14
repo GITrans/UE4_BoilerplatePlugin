@@ -65,4 +65,4 @@ This is not production ready - play at your own risk if you want to give a hand 
 
 ## Game Sequence
 
-![Game Seq
+![Game Sequence](/docs/game_sequence.svg)
