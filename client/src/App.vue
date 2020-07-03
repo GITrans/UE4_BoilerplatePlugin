@@ -3,4 +3,6 @@
     <v-content class="backgr">
         <Game
             :userInfo="userInfo"
-            :guardianApi="guardian
+            :guardianApi="guardianApi"
+            :gameGuardianAmount="gameGuardianAmount"
+            v-on:needs-info="needsInfo()"
