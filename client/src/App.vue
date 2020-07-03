@@ -6,3 +6,7 @@
             :guardianApi="guardianApi"
             :gameGuardianAmount="gameGuardianAmount"
             v-on:needs-info="needsInfo()"
+        />
+        <HelpMenu
+            :infoRequired="infoRequired"
+            :userInfo="userInf
