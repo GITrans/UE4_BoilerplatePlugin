@@ -9,4 +9,8 @@
         />
         <HelpMenu
             :infoRequired="infoRequired"
-            :userInfo="userInf
+            :userInfo="userInfo"
+            :gameAddresses="gameAddresses"
+            :chatUrl="chatUrl"
+            :amount="gameGuardianAmount"
+            v-
