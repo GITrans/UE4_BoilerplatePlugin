@@ -13,4 +13,7 @@
             :gameAddresses="gameAddresses"
             :chatUrl="chatUrl"
             :amount="gameGuardianAmount"
-            v-
+            v-on:set-info="setInfo"
+        />
+        <v-btn absolute small top right fab
+            class="menu chat
