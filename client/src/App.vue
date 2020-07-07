@@ -16,4 +16,9 @@
             v-on:set-info="setInfo"
         />
         <v-btn absolute small top right fab
-            class="menu chat
+            class="menu chat-btn"
+            @click="openChat()"
+        >
+            <v-icon>fa-comments</v-icon>
+        </v-btn>
+    
