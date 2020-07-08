@@ -21,4 +21,10 @@
         >
             <v-icon>fa-comments</v-icon>
         </v-btn>
-    
+    </v-content>
+  </v-app>
+</template>
+
+<script>
+import Vue from 'vue';
+import HelpMenu from './components/H
