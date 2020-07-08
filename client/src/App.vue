@@ -27,4 +27,7 @@
 
 <script>
 import Vue from 'vue';
-import HelpMenu from './components/H
+import HelpMenu from './components/HelpMenu';
+import Game from './components/Game';
+import { GameGuardian, Network } from './constants';
+import { GuardianA
