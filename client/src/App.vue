@@ -41,4 +41,7 @@ export default {
     data () {
         return {
             userInfo: {},
-            infoRequire
+            infoRequired: false,
+            gameAddresses: {
+                token: GameGuardian.token_address[Network],
+              
