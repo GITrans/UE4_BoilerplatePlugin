@@ -36,4 +36,9 @@ export default {
     name: 'App',
     components: {
         HelpMenu,
-   
+        Game,
+    },
+    data () {
+        return {
+            userInfo: {},
+            infoRequire
