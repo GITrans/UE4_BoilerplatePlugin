@@ -30,4 +30,10 @@ import Vue from 'vue';
 import HelpMenu from './components/HelpMenu';
 import Game from './components/Game';
 import { GameGuardian, Network } from './constants';
-import { GuardianA
+import { GuardianApi } from './utils';
+
+export default {
+    name: 'App',
+    components: {
+        HelpMenu,
+   
