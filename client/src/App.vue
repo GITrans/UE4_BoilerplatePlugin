@@ -44,4 +44,7 @@ export default {
             infoRequired: false,
             gameAddresses: {
                 token: GameGuardian.token_address[Network],
-              
+                guardian: GameGuardian.raiden_address[Network],
+            },
+            chatUrl: GameGuardian.chat,
+           
