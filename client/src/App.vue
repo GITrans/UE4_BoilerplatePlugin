@@ -50,4 +50,9 @@ export default {
             gameGuardianAmount: 0,
             guardianApi: new GuardianApi(
                 Vue.axios,
-           
+                GameGuardian.host,
+            ),
+        }
+    },
+    mounted() {
+        this.guardianApi.getAmount().then((response)
