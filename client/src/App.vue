@@ -47,4 +47,7 @@ export default {
                 guardian: GameGuardian.raiden_address[Network],
             },
             chatUrl: GameGuardian.chat,
+            gameGuardianAmount: 0,
+            guardianApi: new GuardianApi(
+                Vue.axios,
            
