@@ -55,4 +55,6 @@ export default {
         }
     },
     mounted() {
-        this.guardianApi.getAmount().then((response)
+        this.guardianApi.getAmount().then((response) => {
+            if (!response.data) {
+                throw new Error('No move amount received from t
