@@ -67,4 +67,7 @@ export default {
             this.userInfo = info;
         },
         needsInfo() {
-     
+            this.infoRequired = true;
+        },
+        openChat() {
+            window.open(GameGuardian.cha
