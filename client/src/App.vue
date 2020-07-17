@@ -57,4 +57,8 @@ export default {
     mounted() {
         this.guardianApi.getAmount().then((response) => {
             if (!response.data) {
-                throw new Error('No move amount received from t
+                throw new Error('No move amount received from the server');
+            }
+            this.gameGuardianAmount = response.data.amount;
+        }).catch(console.log);
+    }
