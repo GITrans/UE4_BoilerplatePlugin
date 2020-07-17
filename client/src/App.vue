@@ -61,4 +61,10 @@ export default {
             }
             this.gameGuardianAmount = response.data.amount;
         }).catch(console.log);
-    }
+    },
+    methods: {
+        setInfo(info) {
+            this.userInfo = info;
+        },
+        needsInfo() {
+     
