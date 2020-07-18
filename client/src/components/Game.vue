@@ -3,4 +3,7 @@
         <swiper-slide class="swiper-margin no-swipe">
             <v-container>
                     <StartPage v-on:go="tryGoToOpenState()"/>
-            </v-
+            </v-container>
+        </swiper-slide>
+        <swiper-slide class="swiper-margin no-swipe">
+            <v-layout text-xs-center wrap
