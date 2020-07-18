@@ -81,4 +81,6 @@ export default {
     background-color: black;
 }
 .chat-btn {
-    margin-rig
+    margin-right: 35px;
+}
+</style>
