@@ -70,4 +70,15 @@ export default {
             this.infoRequired = true;
         },
         openChat() {
-            window.open(GameGuardian.cha
+            window.open(GameGuardian.chat, '_blank');
+        }
+    }
+}
+</script>
+
+<style>
+.backgr {
+    background-color: black;
+}
+.chat-btn {
+    margin-rig
