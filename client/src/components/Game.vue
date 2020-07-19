@@ -10,4 +10,7 @@
                 <v-flex xs12>
                     <GameOpen
                         v-if="game"
-                 
+                        :timer="timer"
+                        :player="player"
+                        :move="move"
+                       
