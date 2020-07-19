@@ -6,4 +6,8 @@
             </v-container>
         </swiper-slide>
         <swiper-slide class="swiper-margin no-swipe">
-            <v-layout text-xs-center wrap
+            <v-layout text-xs-center wrap>
+                <v-flex xs12>
+                    <GameOpen
+                        v-if="game"
+                 
