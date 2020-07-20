@@ -13,4 +13,6 @@
                         :timer="timer"
                         :player="player"
                         :move="move"
-                       
+                        :players1="players1"
+                        :players2="players2"
+                        :gameGuardianAmount="gameGuardianAmo
