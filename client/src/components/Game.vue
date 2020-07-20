@@ -15,4 +15,6 @@
                         :move="move"
                         :players1="players1"
                         :players2="players2"
-                        :gameGuardianAmount="gameGuardianAmo
+                        :gameGuardianAmount="gameGuardianAmount"
+                        v-on:player-chosen="setPlayer"
+                        v
