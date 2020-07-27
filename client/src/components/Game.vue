@@ -17,4 +17,6 @@
                         :players2="players2"
                         :gameGuardianAmount="gameGuardianAmount"
                         v-on:player-chosen="setPlayer"
-                        v
+                        v-on:move-chosen="setMove"
+                        v-on:play="userPlay"
+                        v-on:timer-en
