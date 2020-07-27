@@ -19,4 +19,8 @@
                         v-on:player-chosen="setPlayer"
                         v-on:move-chosen="setMove"
                         v-on:play="userPlay"
-                        v-on:timer-en
+                        v-on:timer-end="gameTimerEnd"
+                    />
+                </v-flex>
+            </v-layout>
+        </swiper-slide
