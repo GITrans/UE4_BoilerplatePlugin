@@ -30,4 +30,6 @@
                 :game="game"
                 :timer="timer"
                 :player="player"
-             
+                :move="move"
+                :raiden_payment="raiden_payment"
+                :winningPayment="winningPay
