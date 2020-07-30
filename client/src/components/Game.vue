@@ -23,4 +23,7 @@
                     />
                 </v-flex>
             </v-layout>
-        </swiper-slide
+        </swiper-slide>
+        <swiper-slide class="swiper-margin no-swipe">
+            <GameClosed
+                v-if="game
