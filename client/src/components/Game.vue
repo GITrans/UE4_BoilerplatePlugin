@@ -26,4 +26,8 @@
         </swiper-slide>
         <swiper-slide class="swiper-margin no-swipe">
             <GameClosed
-                v-if="game
+                v-if="game"
+                :game="game"
+                :timer="timer"
+                :player="player"
+             
