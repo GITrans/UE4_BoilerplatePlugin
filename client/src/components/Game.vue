@@ -32,4 +32,6 @@
                 :player="player"
                 :move="move"
                 :raiden_payment="raiden_payment"
-                :winningPayment="winningPay
+                :winningPayment="winningPayment"
+                v-on:timer-end="resolveTimerEnd"
+                v-on:restart-game="restartG
