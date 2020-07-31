@@ -34,4 +34,8 @@
                 :raiden_payment="raiden_payment"
                 :winningPayment="winningPayment"
                 v-on:timer-end="resolveTimerEnd"
-                v-on:restart-game="restartG
+                v-on:restart-game="restartGame()"
+            />
+        </swiper-slide>
+        <swiper-slide class="swiper-margin no-swipe">
+   
