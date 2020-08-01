@@ -46,4 +46,6 @@
                     />
                     <!-- <RobotLive
                         v-if="game"
-                        :stream="strea
+                        :stream="stream + (gameRevealed ? '&muted=false' : '&muted=true')"
+                    /> -->
+                </v
