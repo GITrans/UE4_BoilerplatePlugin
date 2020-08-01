@@ -43,4 +43,7 @@
                     <RobotLive
                         v-if="game"
                         :stream="stream"
-                  
+                    />
+                    <!-- <RobotLive
+                        v-if="game"
+                        :stream="strea
