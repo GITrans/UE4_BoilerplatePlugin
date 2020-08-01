@@ -40,4 +40,7 @@
         <swiper-slide class="swiper-margin no-swipe">
             <v-layout text-xs-center wrap fullheight>
                 <v-flex xs8>
-                    <R
+                    <RobotLive
+                        v-if="game"
+                        :stream="stream"
+                  
