@@ -48,4 +48,8 @@
                         v-if="game"
                         :stream="stream + (gameRevealed ? '&muted=false' : '&muted=true')"
                     /> -->
-                </v
+                </v-flex>
+                <v-flex xs4>
+                    <GameClosed
+                        v-if="game"
+                 
