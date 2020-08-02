@@ -52,4 +52,7 @@
                 <v-flex xs4>
                     <GameClosed
                         v-if="game"
-                 
+                        :game="game"
+                        :player="player"
+                        :move="move"
+      
