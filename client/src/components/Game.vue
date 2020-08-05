@@ -55,4 +55,5 @@
                         :game="game"
                         :player="player"
                         :move="move"
-      
+                        :winningPayment="winningPayment"
+                        v-on:restart-game="restartG
