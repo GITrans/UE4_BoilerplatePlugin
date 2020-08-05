@@ -56,4 +56,10 @@
                         :player="player"
                         :move="move"
                         :winningPayment="winningPayment"
-                        v-on:restart-game="restartG
+                        v-on:restart-game="restartGame()"
+                    />
+                </v-flex>
+            </v-layout>
+        </swiper-slide>
+
+ 
