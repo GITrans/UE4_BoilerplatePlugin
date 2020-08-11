@@ -65,4 +65,8 @@
         <!-- <v-btn absolute small top left fab
             color="white"
             slot="button-prev"
-       
+            class="nav prev"
+        >
+            <v-icon>fa-chevron-left</v-icon>
+        </v-btn>
+        <v
