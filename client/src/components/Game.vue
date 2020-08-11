@@ -69,4 +69,8 @@
         >
             <v-icon>fa-chevron-left</v-icon>
         </v-btn>
-        <v
+        <v-btn absolute small top right fab
+            color="white"
+            class="nav next"
+            slot="button-next"
+ 
