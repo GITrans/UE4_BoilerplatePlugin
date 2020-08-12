@@ -73,4 +73,10 @@
             color="white"
             class="nav next"
             slot="button-next"
- 
+        >
+            <v-icon>fa-chevron-right</v-icon>
+        </v-btn> -->
+    </swiper>
+</template>
+
+<script
