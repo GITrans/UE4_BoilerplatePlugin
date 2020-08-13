@@ -82,4 +82,8 @@
 <script>
 import Vue from 'vue';
 import VueAwesomeSwiper from 'vue-awesome-swiper';
-import 'swiper/dis
+import 'swiper/dist/css/swiper.css';
+
+import StartPage from './StartPage';
+import GameOpen from './GameOpen';
+import Game
