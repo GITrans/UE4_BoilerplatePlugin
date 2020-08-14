@@ -86,4 +86,6 @@ import 'swiper/dist/css/swiper.css';
 
 import StartPage from './StartPage';
 import GameOpen from './GameOpen';
-import Game
+import GameClosed from './GameClosed';
+import RobotLive from './RobotLive';
+import { IndexToMoves, GameGuardian, GameState, GameStateI
