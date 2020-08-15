@@ -88,4 +88,9 @@ import StartPage from './StartPage';
 import GameOpen from './GameOpen';
 import GameClosed from './GameClosed';
 import RobotLive from './RobotLive';
-import { IndexToMoves, GameGuardian, GameState, GameStateI
+import { IndexToMoves, GameGuardian, GameState, GameStateIndex, Network } from '../constants';
+import { UserRaidenApi } from '../utils';
+
+Vue.use(VueAwesomeSwiper);
+
+const web3Utils = req
