@@ -93,4 +93,7 @@ import { UserRaidenApi } from '../utils';
 
 Vue.use(VueAwesomeSwiper);
 
-const web3Utils = req
+const web3Utils = require('web3-utils');
+
+export default {
+    props: ['userInfo', 'guardianApi', 'gameGuardianAmount']
