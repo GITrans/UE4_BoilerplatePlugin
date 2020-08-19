@@ -96,4 +96,11 @@ Vue.use(VueAwesomeSwiper);
 const web3Utils = require('web3-utils');
 
 export default {
-    props: ['userInfo', 'guardianApi', 'gameGuardianAmount']
+    props: ['userInfo', 'guardianApi', 'gameGuardianAmount'],
+    components: {
+        StartPage,
+        GameOpen,
+        GameClosed,
+        RobotLive,
+    },
+    d
