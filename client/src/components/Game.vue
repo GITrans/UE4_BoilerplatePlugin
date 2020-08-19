@@ -103,4 +103,8 @@ export default {
         GameClosed,
         RobotLive,
     },
-    d
+    data() {
+        let data = {
+            swiperOptions: {
+                noSwiping: true,
+           
