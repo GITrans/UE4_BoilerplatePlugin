@@ -107,4 +107,7 @@ export default {
         let data = {
             swiperOptions: {
                 noSwiping: true,
-           
+                navigation: {
+                    nextEl: '.next',
+                    prevEl: '.prev',
+              
