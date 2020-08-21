@@ -113,4 +113,8 @@ export default {
                 },
                 noSwipingClass: "no-swipe",
                 loop: false,
-                slides
+                slidesPerView: "auto",
+            },
+            userRaidenApi: null,
+            GameState,
+            stream: 
