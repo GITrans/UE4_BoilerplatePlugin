@@ -117,4 +117,7 @@ export default {
             },
             userRaidenApi: null,
             GameState,
-            stream: 
+            stream: GameGuardian.stream,
+            timer: {intervalGame: 0, intervalResolve: 0, value: 0},
+        }
+        this.r
