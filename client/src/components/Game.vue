@@ -110,4 +110,7 @@ export default {
                 navigation: {
                     nextEl: '.next',
                     prevEl: '.prev',
-              
+                },
+                noSwipingClass: "no-swipe",
+                loop: false,
+                slides
