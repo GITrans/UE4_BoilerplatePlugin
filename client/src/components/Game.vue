@@ -120,4 +120,9 @@ export default {
             stream: GameGuardian.stream,
             timer: {intervalGame: 0, intervalResolve: 0, value: 0},
         }
-        this.r
+        this.resetGameData(data);
+        return data;
+    },
+    computed: {
+        swiper() {
+            return this.$r
