@@ -125,4 +125,10 @@ export default {
     },
     computed: {
         swiper() {
-            return this.$r
+            return this.$refs.mySwiper.swiper
+        },
+    },
+    watch: {
+        userInfo() {
+            this.setUserRaidenApi();
+      
