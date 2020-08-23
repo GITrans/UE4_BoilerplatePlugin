@@ -131,4 +131,8 @@ export default {
     watch: {
         userInfo() {
             this.setUserRaidenApi();
-      
+        },
+        game() {
+            if (this.game && this.game.winningMove) {
+                this.goToResolvedState();
+    
