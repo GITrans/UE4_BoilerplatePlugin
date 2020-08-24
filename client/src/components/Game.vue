@@ -143,3 +143,6 @@ export default {
     },
     methods: {
         resetGameData(self) {
+            self.game = null;
+            self.raiden_payment = null;
+            self.winningPaymen
