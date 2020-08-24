@@ -135,4 +135,11 @@ export default {
         game() {
             if (this.game && this.game.winningMove) {
                 this.goToResolvedState();
-    
+            }
+        },
+    },
+    mounted() {
+        this.setUserRaidenApi();
+    },
+    methods: {
+        resetGameData(self) {
