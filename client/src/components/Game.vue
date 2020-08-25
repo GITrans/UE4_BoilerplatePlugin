@@ -145,4 +145,8 @@ export default {
         resetGameData(self) {
             self.game = null;
             self.raiden_payment = null;
-            self.winningPaymen
+            self.winningPayment = null;
+            self.player = null;
+            self.move = null;
+            self.moveStarted = null;
+          
