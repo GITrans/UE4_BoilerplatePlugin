@@ -152,4 +152,8 @@ export default {
             self.secret = null;
             self.players1 = 0;
             self.players2 = 0;
-            self.game
+            self.gameRevealed = false;
+        },
+        setUserRaidenApi() {
+            if (!this.userInfo.ip) return;
+            this.us
