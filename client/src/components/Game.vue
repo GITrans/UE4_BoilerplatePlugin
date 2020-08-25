@@ -149,4 +149,7 @@ export default {
             self.player = null;
             self.move = null;
             self.moveStarted = null;
-          
+            self.secret = null;
+            self.players1 = 0;
+            self.players2 = 0;
+            self.game
