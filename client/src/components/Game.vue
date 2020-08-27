@@ -156,4 +156,7 @@ export default {
         },
         setUserRaidenApi() {
             if (!this.userInfo.ip) return;
-            this.us
+            this.userRaidenApi = new UserRaidenApi(
+                Vue.axios,
+                this.userInfo.ip,
+                GameGuardian.tok
