@@ -159,4 +159,7 @@ export default {
             this.userRaidenApi = new UserRaidenApi(
                 Vue.axios,
                 this.userInfo.ip,
-                GameGuardian.tok
+                GameGuardian.token_address[Network],
+                GameGuardian.raiden_address[Network]
+            );
+            this.userRa
