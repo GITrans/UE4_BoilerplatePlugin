@@ -162,4 +162,6 @@ export default {
                 GameGuardian.token_address[Network],
                 GameGuardian.raiden_address[Network]
             );
-            this.userRa
+            this.userRaidenApi.address().then(response => {
+                if (!response.data)
+                    throw new Err
