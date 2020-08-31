@@ -164,4 +164,5 @@ export default {
             );
             this.userRaidenApi.address().then(response => {
                 if (!response.data)
-                    throw new Err
+                    throw new Error('Could not get your Raiden node Ethereum address');
+                this.userInfo.address = response.da
