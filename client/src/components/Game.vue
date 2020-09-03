@@ -175,4 +175,7 @@ export default {
         },
         goToOpenState() {
             this.swiper.slideTo(GameState.open, 1000, false);
-            this.setPlayersMoveCou
+            this.setPlayersMoveCount();
+        },
+        goToCloseState() {
+            this.swiper.slideTo(GameState.closed, 1000, fal
