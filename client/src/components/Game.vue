@@ -174,3 +174,5 @@ export default {
             this.swiper.slideTo(0, 1000, false);
         },
         goToOpenState() {
+            this.swiper.slideTo(GameState.open, 1000, false);
+            this.setPlayersMoveCou
