@@ -185,3 +185,6 @@ export default {
         },
         setPlayersMoveCount() {
             let intervalID = setInterval(() => {
+                if (this.swiper.realIndex != GameState.open) {
+                    clearInterval(intervalID);
+  
