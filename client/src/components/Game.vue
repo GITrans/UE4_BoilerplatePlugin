@@ -187,4 +187,6 @@ export default {
             let intervalID = setInterval(() => {
                 if (this.swiper.realIndex != GameState.open) {
                     clearInterval(intervalID);
-  
+                    return;
+                }
+                this.guardianApi.getGameMoveCount(this.game._id, 1).
