@@ -198,4 +198,6 @@ export default {
             }, 3000);
         },
         tryGoToOpenState() {
-            
+            console.log('this.userInfo', this.userInfo);
+            this.resetGameData(this);
+            if (!this.userInfo.address || 
