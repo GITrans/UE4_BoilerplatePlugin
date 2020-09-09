@@ -192,4 +192,5 @@ export default {
                 this.guardianApi.getGameMoveCount(this.game._id, 1).then((response) => {
                     this.players1 = response.data.count;
                 });
-                this
+                this.guardianApi.getGameMoveCount(this.game._id, 2).then((response) => {
+                    this.players2 = re
