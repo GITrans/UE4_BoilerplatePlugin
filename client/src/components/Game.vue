@@ -189,4 +189,7 @@ export default {
                     clearInterval(intervalID);
                     return;
                 }
-                this.guardianApi.getGameMoveCount(this.game._id, 1).
+                this.guardianApi.getGameMoveCount(this.game._id, 1).then((response) => {
+                    this.players1 = response.data.count;
+                });
+                this
