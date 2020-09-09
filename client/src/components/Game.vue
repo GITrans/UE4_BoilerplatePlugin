@@ -193,4 +193,9 @@ export default {
                     this.players1 = response.data.count;
                 });
                 this.guardianApi.getGameMoveCount(this.game._id, 2).then((response) => {
-                    this.players2 = re
+                    this.players2 = response.data.count;
+                });
+            }, 3000);
+        },
+        tryGoToOpenState() {
+            
