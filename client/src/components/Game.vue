@@ -200,4 +200,8 @@ export default {
         tryGoToOpenState() {
             console.log('this.userInfo', this.userInfo);
             this.resetGameData(this);
-            if (!this.userInfo.address || 
+            if (!this.userInfo.address || !this.userInfo.ip) {
+                this.$emit('needs-info');
+                return;
+            }
+            this.setCurrentG
