@@ -204,4 +204,5 @@ export default {
                 this.$emit('needs-info');
                 return;
             }
-            this.setCurrentG
+            this.setCurrentGame().then(({ game, gameState, wait }) => {
+                if (gameState == GameState.resol
