@@ -205,4 +205,6 @@ export default {
                 return;
             }
             this.setCurrentGame().then(({ game, gameState, wait }) => {
-                if (gameState == GameState.resol
+                if (gameState == GameState.resolved) {
+                    console.log('gameState resolved, starting new game');
+                    return this.
