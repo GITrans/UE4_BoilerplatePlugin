@@ -211,4 +211,6 @@ export default {
                 }
                 return;
             }).then(() => {
-                return 
+                return this.setCurrentGame();
+            }).then(({ game, gameState, wait }) => {
+                if (gameState == GameState.closed) {
