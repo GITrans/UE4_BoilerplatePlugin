@@ -215,4 +215,9 @@ export default {
             }).then(({ game, gameState, wait }) => {
                 if (gameState == GameState.closed) {
                     alert(`wait for results on previous game: ${Math.floor(wait / 1000)} sec`);
-              
+                } else {
+                    this.goToOpenState();
+                }
+            });
+        },
+        u
