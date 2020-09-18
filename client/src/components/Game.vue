@@ -220,4 +220,7 @@ export default {
                 }
             });
         },
-        u
+        userPlay() {
+            let self = this;
+            if (!this.player || !this.move) {
+                alert('Choose a player and a mo
