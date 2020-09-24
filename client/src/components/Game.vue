@@ -231,4 +231,7 @@ export default {
                 if (!self.paymentIdentifier) {
                     await self.initMove();
                 }
-                if (!self.paymentIdentifier
+                if (!self.paymentIdentifier) {
+                    throw new Error('Payment identifier not received.');
+                }
+               
