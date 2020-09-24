@@ -223,4 +223,9 @@ export default {
         userPlay() {
             let self = this;
             if (!this.player || !this.move) {
-                alert('Choose a player and a mo
+                alert('Choose a player and a move.');
+                return;
+            }
+
+            async function play() {
+               
