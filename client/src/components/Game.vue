@@ -228,4 +228,7 @@ export default {
             }
 
             async function play() {
-               
+                if (!self.paymentIdentifier) {
+                    await self.initMove();
+                }
+                if (!self.paymentIdentifier
