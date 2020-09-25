@@ -234,4 +234,6 @@ export default {
                 if (!self.paymentIdentifier) {
                     throw new Error('Payment identifier not received.');
                 }
-               
+                if (self.raiden_payment) {
+                    console.log('Raiden payment already sent.');
+                    
