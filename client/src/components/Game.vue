@@ -236,4 +236,7 @@ export default {
                 }
                 if (self.raiden_payment) {
                     console.log('Raiden payment already sent.');
-                    
+                    return;
+                }
+                self.userRaidenApi.pay({
+                    amount: self.g
