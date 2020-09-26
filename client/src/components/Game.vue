@@ -239,4 +239,6 @@ export default {
                     return;
                 }
                 self.userRaidenApi.pay({
-                    amount: self.g
+                    amount: self.gameGuardianAmount,
+                    identifier: self.paymentIdentifier,
+                }).then((response) => {
