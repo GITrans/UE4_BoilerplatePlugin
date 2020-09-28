@@ -243,4 +243,6 @@ export default {
                     identifier: self.paymentIdentifier,
                 }).then((response) => {
                     console.log('raiden payment response', response);
-                    self.paymentIde
+                    self.paymentIdentifier = null;
+                    self.raiden_payment = response.data;
+                    self.goToCloseState(
