@@ -242,3 +242,5 @@ export default {
                     amount: self.gameGuardianAmount,
                     identifier: self.paymentIdentifier,
                 }).then((response) => {
+                    console.log('raiden payment response', response);
+                    self.paymentIde
