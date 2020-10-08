@@ -245,4 +245,7 @@ export default {
                     console.log('raiden payment response', response);
                     self.paymentIdentifier = null;
                     self.raiden_payment = response.data;
-                    self.goToCloseState(
+                    self.goToCloseState();
+                }).catch((error) => {
+                    alert(`${error} on ${self.userRaidenApi.ip}`);
+           
