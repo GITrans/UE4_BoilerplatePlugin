@@ -248,4 +248,9 @@ export default {
                     self.goToCloseState();
                 }).catch((error) => {
                     alert(`${error} on ${self.userRaidenApi.ip}`);
-           
+                });
+            }
+            play();
+        },
+        initMove() {
+            return this.guardianApi.initMove(
