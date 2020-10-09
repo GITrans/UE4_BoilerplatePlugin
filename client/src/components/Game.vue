@@ -256,4 +256,7 @@ export default {
             return this.guardianApi.initMove(this.game._id, {
                 playerId: String(this.player),
                 userAddress: this.userInfo.address,
-                mo
+                moveHash: this.getMoveHash(),
+            }).catch((error) => {
+                alert(`${error} on ${this.guardianApi.ip}`);
+            }).t
