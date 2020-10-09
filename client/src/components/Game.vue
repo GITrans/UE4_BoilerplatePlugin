@@ -253,4 +253,7 @@ export default {
             play();
         },
         initMove() {
-            return this.guardianApi.initMove(
+            return this.guardianApi.initMove(this.game._id, {
+                playerId: String(this.player),
+                userAddress: this.userInfo.address,
+                mo
