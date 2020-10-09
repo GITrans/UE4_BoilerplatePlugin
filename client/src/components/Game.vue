@@ -259,4 +259,6 @@ export default {
                 moveHash: this.getMoveHash(),
             }).catch((error) => {
                 alert(`${error} on ${this.guardianApi.ip}`);
-            }).t
+            }).then((response) => {
+                this.moveStarted = response.data;
+                this.paymentIdentifier = response.data.pa
