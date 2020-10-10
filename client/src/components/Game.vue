@@ -261,4 +261,9 @@ export default {
                 alert(`${error} on ${this.guardianApi.ip}`);
             }).then((response) => {
                 this.moveStarted = response.data;
-                this.paymentIdentifier = response.data.pa
+                this.paymentIdentifier = response.data.paymentIdentifier;
+            });
+        },
+        setPlayer(index) {
+            this.player = index;
+            conso
