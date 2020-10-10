@@ -266,4 +266,8 @@ export default {
         },
         setPlayer(index) {
             this.player = index;
-            conso
+            console.log('this.player', this.player);
+        },
+        setMove(index) {
+            this.move = index;
+     
