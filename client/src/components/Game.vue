@@ -270,4 +270,7 @@ export default {
         },
         setMove(index) {
             this.move = index;
-     
+            console.log('this.move', this.move);
+        },
+        getSecret() {
+            return Math.random().toString(36)
