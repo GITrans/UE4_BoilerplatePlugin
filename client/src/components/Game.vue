@@ -275,4 +275,7 @@ export default {
         getSecret() {
             return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
         },
-        getMoveHas
+        getMoveHash() {
+            const secret = this.getSecret();
+
+            if (!this.player) throw new Error('Cannot send move. No player wa
