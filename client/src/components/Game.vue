@@ -278,4 +278,6 @@ export default {
         getMoveHash() {
             const secret = this.getSecret();
 
-            if (!this.player) throw new Error('Cannot send move. No player wa
+            if (!this.player) throw new Error('Cannot send move. No player was chosen.');
+            if (!this.move) throw new Error('Cannot send move. No move was chosen.');
+         
