@@ -283,4 +283,7 @@ export default {
             if (!this.game._id) throw new Error('Cannot send move. No game._id.');
             if (!secret) throw new Error('Cannot send move. No secret was chosen.');
             this.secret = secret;
-            return web3Utils.soliditySha3(this.userInfo.address, this.game._id, this.player, IndexToMoves[this.move], this.
+            return web3Utils.soliditySha3(this.userInfo.address, this.game._id, this.player, IndexToMoves[this.move], this.gameGuardianAmount, secret);
+        },
+        setCurrentGame() {
+            return this.guardianApi.getGame(
