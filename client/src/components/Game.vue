@@ -281,4 +281,6 @@ export default {
             if (!this.player) throw new Error('Cannot send move. No player was chosen.');
             if (!this.move) throw new Error('Cannot send move. No move was chosen.');
             if (!this.game._id) throw new Error('Cannot send move. No game._id.');
-            if (!secret) t
+            if (!secret) throw new Error('Cannot send move. No secret was chosen.');
+            this.secret = secret;
+            
