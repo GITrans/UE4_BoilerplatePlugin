@@ -286,4 +286,6 @@ export default {
             return web3Utils.soliditySha3(this.userInfo.address, this.game._id, this.player, IndexToMoves[this.move], this.gameGuardianAmount, secret);
         },
         setCurrentGame() {
-            return this.guardianApi.getGame(
+            return this.guardianApi.getGame().then((response) => {
+                let deltaTime, gameState, wait, intervalResolve;
+                const game 
