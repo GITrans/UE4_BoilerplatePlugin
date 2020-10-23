@@ -288,4 +288,7 @@ export default {
         setCurrentGame() {
             return this.guardianApi.getGame().then((response) => {
                 let deltaTime, gameState, wait, intervalResolve;
-                const game 
+                const game = response.data[0];
+
+                deltaTime = new Date().getTime() - new Date(game.startTime).getTime();
+                interv
