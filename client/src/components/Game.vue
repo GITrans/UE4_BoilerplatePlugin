@@ -291,4 +291,6 @@ export default {
                 const game = response.data[0];
 
                 deltaTime = new Date().getTime() - new Date(game.startTime).getTime();
-                interv
+                intervalResolve = game.gameTime + game.resolveTime;
+
+                console.log('setCurrentGame', game);
