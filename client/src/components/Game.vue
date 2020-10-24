@@ -299,4 +299,6 @@ export default {
                 if (deltaTime < game.gameTime) {
                     gameState = GameState.open;
                 } else if (deltaTime < (game.gameTime + game.resolveTime)) {
-          
+                    gameState = GameState.closed;
+                } else {
+                    gameState = GameState.reso
