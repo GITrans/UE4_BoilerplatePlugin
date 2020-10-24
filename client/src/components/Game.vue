@@ -297,4 +297,6 @@ export default {
                 console.log('this.timer', this.timer);
 
                 if (deltaTime < game.gameTime) {
-               
+                    gameState = GameState.open;
+                } else if (deltaTime < (game.gameTime + game.resolveTime)) {
+          
