@@ -294,3 +294,7 @@ export default {
                 intervalResolve = game.gameTime + game.resolveTime;
 
                 console.log('setCurrentGame', game);
+                console.log('this.timer', this.timer);
+
+                if (deltaTime < game.gameTime) {
+               
