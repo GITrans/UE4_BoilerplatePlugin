@@ -306,4 +306,5 @@ export default {
 
                 if (gameState == GameState.open) {
                     this.game = game;
-   
+                    this.timer.intervalGame = game.gameTime;
+                    this.timer.intervalRes
