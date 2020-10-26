@@ -307,4 +307,6 @@ export default {
                 if (gameState == GameState.open) {
                     this.game = game;
                     this.timer.intervalGame = game.gameTime;
-                    this.timer.intervalRes
+                    this.timer.intervalResolve = intervalResolve;
+                    this.timer.value = new Date(game.startTime).getTime();
+           
