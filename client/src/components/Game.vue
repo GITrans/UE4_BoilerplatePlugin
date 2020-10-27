@@ -309,4 +309,6 @@ export default {
                     this.timer.intervalGame = game.gameTime;
                     this.timer.intervalResolve = intervalResolve;
                     this.timer.value = new Date(game.startTime).getTime();
-           
+                    console.log('gameState', GameStateIndex[gameState]);
+                }
+                wait = intervalReso
