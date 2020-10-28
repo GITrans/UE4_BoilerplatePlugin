@@ -316,4 +316,8 @@ export default {
 
             });
         },
-        sta
+        startGame() {
+            return this.guardianApi.startGame();
+        },
+        gameTimerEnd() {
+            console.log('game
