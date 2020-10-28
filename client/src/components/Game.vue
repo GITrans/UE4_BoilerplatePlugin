@@ -311,4 +311,9 @@ export default {
                     this.timer.value = new Date(game.startTime).getTime();
                     console.log('gameState', GameStateIndex[gameState]);
                 }
-                wait = intervalReso
+                wait = intervalResolve - deltaTime;
+                return { game, gameState, wait };
+
+            });
+        },
+        sta
