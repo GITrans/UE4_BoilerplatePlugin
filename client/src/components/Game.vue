@@ -320,4 +320,6 @@ export default {
             return this.guardianApi.startGame();
         },
         gameTimerEnd() {
-            console.log('game
+            console.log('gameTimerEnd');
+            // If a move was sent go to the next step
+            // Go back to start if the game was not pl
