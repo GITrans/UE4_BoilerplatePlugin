@@ -322,4 +322,7 @@ export default {
         gameTimerEnd() {
             console.log('gameTimerEnd');
             // If a move was sent go to the next step
-            // Go back to start if the game was not pl
+            // Go back to start if the game was not played
+            if (!this.raiden_payment) {
+                this.restartGame();
+                alert('Your off-chain pa
