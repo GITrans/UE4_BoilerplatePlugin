@@ -325,4 +325,6 @@ export default {
             // Go back to start if the game was not played
             if (!this.raiden_payment) {
                 this.restartGame();
-                alert('Your off-chain pa
+                alert('Your off-chain payment was not sent to the guardian. Please check your Raiden node.')
+            } else {
+                // Just 
