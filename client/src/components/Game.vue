@@ -331,4 +331,6 @@ export default {
                 if (this.swiper.realIndex == GameState.open) {
                     this.goToCloseState();
                 }
-                // Send the mo
+                // Send the move data to the guardian server
+                this.guardianApi.revealMove(this.moveStarted._id, {
+        
