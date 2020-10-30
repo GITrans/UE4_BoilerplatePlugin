@@ -333,4 +333,6 @@ export default {
                 }
                 // Send the move data to the guardian server
                 this.guardianApi.revealMove(this.moveStarted._id, {
-        
+                    move: IndexToMoves[this.move],
+                    secret: this.secret,
+                    amount: thi
