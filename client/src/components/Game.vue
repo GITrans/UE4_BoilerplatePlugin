@@ -327,4 +327,5 @@ export default {
                 this.restartGame();
                 alert('Your off-chain payment was not sent to the guardian. Please check your Raiden node.')
             } else {
-                // Just 
+                // Just in case the next step slide did not work after the payment was made
+                if (this.swiper.realIndex == Gam
