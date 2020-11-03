@@ -335,4 +335,7 @@ export default {
                 this.guardianApi.revealMove(this.moveStarted._id, {
                     move: IndexToMoves[this.move],
                     secret: this.secret,
-                    amount: thi
+                    amount: this.gameGuardianAmount,
+                }).then((response) => {
+                    console.log('revealMove', response);
+    
