@@ -338,4 +338,8 @@ export default {
                     amount: this.gameGuardianAmount,
                 }).then((response) => {
                     console.log('revealMove', response);
-    
+                }).catch(alert);
+            }
+        },
+        resolveTimerEnd() {
+            console.
