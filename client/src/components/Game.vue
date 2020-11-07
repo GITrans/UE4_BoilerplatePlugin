@@ -344,4 +344,5 @@ export default {
         resolveTimerEnd() {
             console.log('resolveTimerEnd');
             // get winning move from the server and show it in GameClosed
-            // (remove
+            // (remove next game timer from last page; maybe have one on the first page)
+            this.guardi
