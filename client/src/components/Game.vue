@@ -345,4 +345,7 @@ export default {
             console.log('resolveTimerEnd');
             // get winning move from the server and show it in GameClosed
             // (remove next game timer from last page; maybe have one on the first page)
-            this.guardi
+            this.guardianApi.revealGame(this.game._id)
+                .then((response) => {
+                    let game = response.data;
+               
