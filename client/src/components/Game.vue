@@ -348,4 +348,5 @@ export default {
             this.guardianApi.revealGame(this.game._id)
                 .then((response) => {
                     let game = response.data;
-               
+                    if (!game) throw new Error(`Game not found ${this.game._id}`);
+                    if (game.inProgress || !game.winningM
