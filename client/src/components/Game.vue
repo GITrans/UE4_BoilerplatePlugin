@@ -349,4 +349,7 @@ export default {
                 .then((response) => {
                     let game = response.data;
                     if (!game) throw new Error(`Game not found ${this.game._id}`);
-                    if (game.inProgress || !game.winningM
+                    if (game.inProgress || !game.winningMove) {
+                        setTimeout(this.resolveTimerEnd, 2000);
+                        return;
+                   
