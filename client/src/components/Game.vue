@@ -356,4 +356,7 @@ export default {
                     this.game = game;
                     this.gameRevealed = true;
 
-                    if (Index
+                    if (IndexToMoves[this.move] === game.winningMove) {
+                        this.tryGetWinningPayment();
+                    } else {
+       
