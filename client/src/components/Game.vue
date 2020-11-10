@@ -352,4 +352,8 @@ export default {
                     if (game.inProgress || !game.winningMove) {
                         setTimeout(this.resolveTimerEnd, 2000);
                         return;
-                   
+                    }
+                    this.game = game;
+                    this.gameRevealed = true;
+
+                    if (Index
