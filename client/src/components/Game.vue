@@ -359,4 +359,6 @@ export default {
                     if (IndexToMoves[this.move] === game.winningMove) {
                         this.tryGetWinningPayment();
                     } else {
-       
+                        this.winningPayment = 'You lost.';
+                    }
+                }).catch(
