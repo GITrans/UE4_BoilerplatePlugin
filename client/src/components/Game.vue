@@ -361,4 +361,9 @@ export default {
                     } else {
                         this.winningPayment = 'You lost.';
                     }
-                }).catch(
+                }).catch(alert);
+        },
+        tryGetWinningPayment() {
+            let repeatTimes = 0;
+            let intervalID = setInterval(() => {
+ 
