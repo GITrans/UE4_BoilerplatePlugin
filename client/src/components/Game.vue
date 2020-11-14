@@ -370,4 +370,6 @@ export default {
                 if (!this.winningPayment) {
                     if (repeatTimes < 20) {
                         console.log('Trying to find winning Raiden payment from CyryptoWarsGuardian');
-          
+                        this.getWinningPayment();
+                    } else {
+                        this.winningP
