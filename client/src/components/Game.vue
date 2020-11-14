@@ -372,4 +372,7 @@ export default {
                         console.log('Trying to find winning Raiden payment from CyryptoWarsGuardian');
                         this.getWinningPayment();
                     } else {
-                        this.winningP
+                        this.winningPayment = 'Could not find Raiden payment.';
+                        clearInterval(intervalID);
+                    }
+            
