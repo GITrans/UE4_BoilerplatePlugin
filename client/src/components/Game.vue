@@ -366,4 +366,6 @@ export default {
         tryGetWinningPayment() {
             let repeatTimes = 0;
             let intervalID = setInterval(() => {
- 
+                repeatTimes ++;
+                if (!this.winningPayment) {
+                    if (repeatTimes < 20) 
