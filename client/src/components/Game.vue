@@ -380,4 +380,6 @@ export default {
                 }
             }, 2000);
         },
-   
+        getWinningPayment() {
+            return this.userRaidenApi.payments().then((response) => {
+                let paym
