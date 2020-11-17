@@ -375,4 +375,9 @@ export default {
                         this.winningPayment = 'Could not find Raiden payment.';
                         clearInterval(intervalID);
                     }
-            
+                } else {
+                    clearInterval(intervalID);
+                }
+            }, 2000);
+        },
+   
