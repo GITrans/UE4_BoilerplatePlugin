@@ -383,4 +383,7 @@ export default {
         getWinningPayment() {
             return this.userRaidenApi.payments().then((response) => {
                 let payments = response.data.filter((payment) => {
-                    return payment.initiator === GameGuardian.raiden_addres
+                    return payment.initiator === GameGuardian.raiden_address[Network];
+                });
+                console.log('payments', payments);
+                const last
