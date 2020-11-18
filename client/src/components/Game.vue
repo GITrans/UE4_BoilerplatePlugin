@@ -386,4 +386,6 @@ export default {
                     return payment.initiator === GameGuardian.raiden_address[Network];
                 });
                 console.log('payments', payments);
-                const last
+                const lastPaymentReceived = payments.pop();
+                console.log('lastPaymentReceived', lastPaymentReceived);
+            
