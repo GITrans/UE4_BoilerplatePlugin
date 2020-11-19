@@ -390,4 +390,6 @@ export default {
                 console.log('lastPaymentReceived', lastPaymentReceived);
                 console.log('this.raiden_payment', this.raiden_payment);
                 if (
-                   
+                    lastPaymentReceived &&
+                    this.raiden_payment &&
+                    lastPaymen
