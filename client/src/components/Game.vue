@@ -388,4 +388,6 @@ export default {
                 console.log('payments', payments);
                 const lastPaymentReceived = payments.pop();
                 console.log('lastPaymentReceived', lastPaymentReceived);
-            
+                console.log('this.raiden_payment', this.raiden_payment);
+                if (
+                   
