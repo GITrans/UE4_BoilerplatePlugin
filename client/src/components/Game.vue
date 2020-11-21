@@ -397,4 +397,16 @@ export default {
                     this.winningPayment = lastPaymentReceived;
                     console.log('winningPayment set');
                 }
-            })
+            });
+        },
+    }
+}
+</script>
+
+<style>
+html, body {
+    margin: 0;
+}
+.margin {
+    margin: auto;
+    padding-bottom: 10px
