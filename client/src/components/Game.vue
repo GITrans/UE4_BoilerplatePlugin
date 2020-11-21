@@ -392,4 +392,6 @@ export default {
                 if (
                     lastPaymentReceived &&
                     this.raiden_payment &&
-                    lastPaymen
+                    lastPaymentReceived.identifier === this.raiden_payment.identifier
+                ) {
+                    this.winningPaymen
