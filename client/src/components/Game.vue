@@ -394,4 +394,7 @@ export default {
                     this.raiden_payment &&
                     lastPaymentReceived.identifier === this.raiden_payment.identifier
                 ) {
-                    this.winningPaymen
+                    this.winningPayment = lastPaymentReceived;
+                    console.log('winningPayment set');
+                }
+            })
