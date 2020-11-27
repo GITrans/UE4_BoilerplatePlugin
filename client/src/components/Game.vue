@@ -426,4 +426,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-
+    font-family: sans-serif;
+}
+.swiper-slide {
+    width: 100%!important;
+}
+/* .swiper-slide:nth-child(2n), .swiper-slide:nth-
