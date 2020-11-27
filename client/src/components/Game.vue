@@ -409,4 +409,11 @@ html, body {
 }
 .margin {
     margin: auto;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+}
+.menu{
+    position:fixed!important;
+    top:3px!important;
+}
+.menu.help {
+    right: 3px!impor
