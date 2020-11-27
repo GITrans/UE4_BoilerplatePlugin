@@ -416,4 +416,14 @@ html, body {
     top:3px!important;
 }
 .menu.help {
-    right: 3px!impor
+    right: 3px!important;
+}
+
+.swiper-margin {
+    margin: 0;
+}
+.swiper-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-
