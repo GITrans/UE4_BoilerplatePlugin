@@ -431,4 +431,8 @@ html, body {
 .swiper-slide {
     width: 100%!important;
 }
-/* .swiper-slide:nth-child(2n), .swiper-slide:nth-
+/* .swiper-slide:nth-child(2n), .swiper-slide:nth-child(4n) {
+    width: 70%!important;
+}
+.swiper-slide:nth-child(3n), .swiper-slide:nth-child(5n) {
+    width: 30%!i
