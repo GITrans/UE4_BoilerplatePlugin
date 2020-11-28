@@ -450,4 +450,9 @@ html, body {
     top:3px!important;
 }
 .nav.prev {
-    l
+    left: 163px!important;
+}
+.nav.next {
+    right: 163px!important;
+}
+</style>
