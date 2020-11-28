@@ -435,4 +435,10 @@ html, body {
     width: 70%!important;
 }
 .swiper-slide:nth-child(3n), .swiper-slide:nth-child(5n) {
-    width: 30%!i
+    width: 30%!important;
+    overflow-y: scroll;
+} */
+.fullheight, .v-window, .v-window__container {
+    height: 100%;
+}
+.v-tab
