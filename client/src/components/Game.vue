@@ -441,4 +441,13 @@ html, body {
 .fullheight, .v-window, .v-window__container {
     height: 100%;
 }
-.v-tab
+.v-tabs__items {
+    height: 100%;
+}
+
+.nav{
+    position:fixed!important;
+    top:3px!important;
+}
+.nav.prev {
+    l
