@@ -135,3 +135,82 @@ export default {
         videoPlaying: false,
         our_player: {},
         opponent_player: {},
+    }),
+    watch: {
+        game() {
+            if (!this.game[`player${this.player}`]) return;
+            let our_player = JSON.parse(JSON.stringify(
+                this.game[`player${this.player}`]
+            ));
+            let opponent_player = JSON.parse(JSON.stringify(
+                this.game[`player${this.opponent()}`]
+            ));
+
+            let opponentMove = opponent_player.move;
+            if (opponentMove) this.opponentMove = MovesToIndex[opponentMove];
+            if (this.game.winningMove) this.winningMove = this.game.winningMove;
+
+            if (our_player) {
+                let move_values = Object.entries(our_player.move_count).map(move => {
+                    return {value: move[1] || 0.2, title: `${move[0]}: ${move[1]}`};
+                });
+                our_player.move_values = [{value: 0, title: ''}].concat(move_values);
+            }
+
+            if (opponent_player) {
+                if (!opponent_player.count) {
+                    opponent_player.count = 1;
+                    opponent_player.move_count[opponentMove] = 1;
+                }
+                let move_values = Object.entries(opponent_player.move_count).map(move => {
+                    return {value: move[1] || 0.2, title: `${move[0]}: ${move[1]}`};
+                });
+                opponent_player.move_values = [{value: 0, title: ''}].concat(move_values);
+            }
+
+            this.our_player = our_player;
+            this.opponent_player = opponent_player;
+        }
+    },
+    methods: {
+        opponent() {
+            return this.player ? (3 - this.player) : null;
+        },
+        displayWinningPayment() {
+            if (typeof this.winningPayment === 'string') {
+                return this.winningPayment;
+            }
+            return `You have received a micropayment from CryptoWars Guardian ${GameGuardian.raiden_address[Network]} of ${parseFloat(this.winningPayment.amount / 10**18).toFixed(18)} WETH with identifier ${this.winningPayment.identifier} at log_time ${this.winningPayment.log_time}.`
+        },
+        videoEnded() {
+            this.videoPlaying = false;
+        },
+        videoReady() {
+            this.videoPlaying = true;
+        }
+    }
+}
+</script>
+
+<style>
+.nomargin {
+    margin: 0;
+    padding: 0;
+}
+.full {
+    height: 100px;
+    width: 100px;
+}
+.backgr-vid-play iframe{
+    position: absolute;
+    opacity: 1;
+}
+.backgr-vid-end iframe{
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+}
+.backr-text {
+    opacity: 0;
+}
+</style>
