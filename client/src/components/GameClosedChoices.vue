@@ -3,4 +3,6 @@
         <v-flex xs2 offset-xs4>
             <v-avatar
                 class="v-btn v-btn--depressed v-btn--floating"
-                :s
+                :size="80"
+                :color="us === 1 ? 'white' : 'grey darken-1'"
+                v-on:click.stop="choosePlayer
