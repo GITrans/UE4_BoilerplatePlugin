@@ -16,4 +16,6 @@
                 class="move-btn"
                 large fab light :color="us === 1 ? 'white' : 'grey darken-1'"
             >
-                <v-icon dark x
+                <v-icon dark x-large>{{ `fa-hand-${IndexToMoves[move]}` }}</v-icon>
+            </v-btn>
+            <p class="subheading" text-xs-center wrap v-i
