@@ -10,4 +10,8 @@
                 <img :src="`./${IndexToPlayer[player]}_t2.png`" alt="avatar">
             </v-avatar>
             <p class="subheading" text-xs-center wrap v-if="player_info">{{player_info}}</p>
-       
+        </v-flex>
+        <v-flex xs2>
+            <v-btn v-if="move"
+                class="move-btn"
+                
