@@ -8,3 +8,6 @@
                 v-on:click.stop="choosePlayer(PlayerToIndex.vader)"
             >
                 <img :src="`./${IndexToPlayer[player]}_t2.png`" alt="avatar">
+            </v-avatar>
+            <p class="subheading" text-xs-center wrap v-if="player_info">{{player_info}}</p>
+       
