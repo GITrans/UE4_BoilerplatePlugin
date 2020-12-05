@@ -5,4 +5,6 @@
                 class="v-btn v-btn--depressed v-btn--floating"
                 :size="80"
                 :color="us === 1 ? 'white' : 'grey darken-1'"
-                v-on:click.stop="choosePlayer
+                v-on:click.stop="choosePlayer(PlayerToIndex.vader)"
+            >
+                <img :src="`./${IndexToPlayer[player]}_t2.png`" alt="avatar">
