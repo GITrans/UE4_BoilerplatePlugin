@@ -14,4 +14,6 @@
         <v-flex xs2>
             <v-btn v-if="move"
                 class="move-btn"
-                
+                large fab light :color="us === 1 ? 'white' : 'grey darken-1'"
+            >
+                <v-icon dark x
