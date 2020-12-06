@@ -23,4 +23,8 @@
                 :time="timer.intervalResolve"
                 :startValue="timer.value"
                 size="90"
-                color
+                color="white"
+                v-on:timer-end="$emit('timer-end')"
+            />
+        </v-flex>
+    </v-la
