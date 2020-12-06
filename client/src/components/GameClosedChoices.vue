@@ -20,4 +20,7 @@
             </v-btn>
             <p class="subheading" text-xs-center wrap v-if="move && move_info">{{move_info}}</p>
             <Timer v-else-if="timer"
-                :time="timer.interval
+                :time="timer.intervalResolve"
+                :startValue="timer.value"
+                size="90"
+                color
