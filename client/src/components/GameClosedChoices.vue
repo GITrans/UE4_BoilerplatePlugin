@@ -18,4 +18,6 @@
             >
                 <v-icon dark x-large>{{ `fa-hand-${IndexToMoves[move]}` }}</v-icon>
             </v-btn>
-            <p class="subheading" text-xs-center wrap v-i
+            <p class="subheading" text-xs-center wrap v-if="move && move_info">{{move_info}}</p>
+            <Timer v-else-if="timer"
+                :time="timer.interval
