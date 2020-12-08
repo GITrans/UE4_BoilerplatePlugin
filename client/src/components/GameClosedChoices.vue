@@ -27,4 +27,9 @@
                 v-on:timer-end="$emit('timer-end')"
             />
         </v-flex>
-    </v-la
+    </v-layout>
+</template>
+
+<script>
+import { IndexToPlayer, IndexToMoves } from '../constants';
+import Timer from './Timer
