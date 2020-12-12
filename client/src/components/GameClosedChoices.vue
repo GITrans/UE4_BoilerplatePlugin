@@ -32,4 +32,10 @@
 
 <script>
 import { IndexToPlayer, IndexToMoves } from '../constants';
-import Timer from './Timer
+import Timer from './Timer';
+
+export default {
+    components: {
+        Timer,
+    },
+    props: ['timer', 'player', 'move', 'us', 'player_in
