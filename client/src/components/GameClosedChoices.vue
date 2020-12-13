@@ -38,4 +38,12 @@ export default {
     components: {
         Timer,
     },
-    props: ['timer', 'player', 'move', 'us', 'player_in
+    props: ['timer', 'player', 'move', 'us', 'player_info', 'move_info'],
+    data: () => ({
+        IndexToPlayer,
+        IndexToMoves,
+    }),
+}
+</script>
+
+<style>
