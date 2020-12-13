@@ -47,3 +47,8 @@ export default {
 </script>
 
 <style>
+.move-btn {
+    width: 80px!important;
+    height: 80px!important;
+}
+</style>
