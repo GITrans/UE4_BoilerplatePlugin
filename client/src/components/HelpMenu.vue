@@ -55,3 +55,65 @@
                         placeholder="127.0.0.1:5001"
                         :value="userInfo.ip"
                         :append-icon="ip ? `check` : ``"
+                        required
+                    ></v-text-field>
+                </v-form>
+                </br>
+                <p class="display-1">Disclaimer</p>
+                <p>This is experimental software running on the Mainnet. Use it at your own risk if you want to give a hand at testing the game and the Bug Bounty Raiden Network release.</p>
+                <p>This project is built on top of Raiden Network, but it is an effort external to the Raiden Network project. Any issues encountered with the game should be directed to our <a href="https://github.com/cryptoplayerone/cryptobotwars/issues" target="_blank">Github Issue Tracker</a>.</p>
+                <p>Any issues encountered with Raiden, should be directed to the Raiden project.</p>
+            </v-card-text>
+
+            <v-divider></v-divider>
+
+            <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn
+                    color="primary"
+                    flat
+                    @click="closeDialog()"
+                >
+                    I accept
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+    </v-dialog>
+</template>
+
+<script>
+export default {
+    props: ['infoRequired', 'userInfo', 'gameAddresses', 'chatUrl', 'amount'],
+    data() {
+        return {
+            dialog: false,
+            valid: false,
+            ip: '',
+            ipRules: [
+                v => !!v || 'IP is required',
+                v => /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]):[0-9]+$/.test(v) || 'IP must be valid'
+            ]
+        }
+    },
+    mounted() {
+        this.ip = '127.0.0.1:5001';
+    },
+    watch: {
+        infoRequired() {
+            if (this.infoRequired) {
+                this.dialog = true;
+            }
+        },
+    },
+    methods: {
+        closeDialog() {
+            if(this.ip) {
+                this.dialog = false;
+                this.$emit('set-info', {
+                    ip: `http://${this.ip}`,
+                });
+            }
+        },
+    }
+}
+</script>
