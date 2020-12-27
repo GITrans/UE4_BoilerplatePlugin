@@ -17,4 +17,10 @@
 
 <script>
 import Vue from 'vue';
-import TwitchLive from '
+import TwitchLive from './TwitchLive';
+
+export default {
+    components: {
+        'twitch-player': TwitchLive,
+    },
+    // props: ['stre
