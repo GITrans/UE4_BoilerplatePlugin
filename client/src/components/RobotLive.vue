@@ -10,4 +10,11 @@
         :channel="channel"
         :volume="volume"
         height="100%"
-      
+        width="100%"
+        @ready="ready"
+    />
+</template>
+
+<script>
+import Vue from 'vue';
+import TwitchLive from '
