@@ -5,4 +5,9 @@
         :src="stream"
     ></iframe> -->
     <twitch-player
-        ref="p
+        ref="player"
+        class="stream"
+        :channel="channel"
+        :volume="volume"
+        height="100%"
+      
