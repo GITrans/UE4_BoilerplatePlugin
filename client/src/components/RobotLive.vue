@@ -23,4 +23,9 @@ export default {
     components: {
         'twitch-player': TwitchLive,
     },
-    // props: ['stre
+    // props: ['stream'],
+    data() {
+        return {
+            player: null,
+            channel: 'cryptobotwars',
+            vol
