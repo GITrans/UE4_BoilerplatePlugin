@@ -38,4 +38,6 @@ export default {
     methods: {
         ready() {
             setTimeout(() => {
-                let in
+                let intervalId, retries = 0;
+                intervalId = setInterval(() => {
+                    retries ++;
