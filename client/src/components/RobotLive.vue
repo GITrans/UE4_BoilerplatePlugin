@@ -41,3 +41,5 @@ export default {
                 let intervalId, retries = 0;
                 intervalId = setInterval(() => {
                     retries ++;
+                    console.log('volume', this.player.getVolume(), this.player.isMuted());
+                    if (
