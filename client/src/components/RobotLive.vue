@@ -28,4 +28,9 @@ export default {
         return {
             player: null,
             channel: 'cryptobotwars',
-            vol
+            volume: 0,
+            quality: 'medium',
+        }
+    },
+    mounted() {
+        this.player = this.$refs.playe
