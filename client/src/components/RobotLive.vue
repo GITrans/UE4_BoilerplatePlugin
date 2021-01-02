@@ -33,4 +33,9 @@ export default {
         }
     },
     mounted() {
-        this.player = this.$refs.playe
+        this.player = this.$refs.player;
+    },
+    methods: {
+        ready() {
+            setTimeout(() => {
+                let in
