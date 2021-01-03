@@ -48,4 +48,8 @@ export default {
                     )) {
                         clearInterval(intervalId);
                     }
-                    this.
+                    this.volume = 1;
+                    this.player.unmute();
+                }, 100);
+            }, 60000);
+        
