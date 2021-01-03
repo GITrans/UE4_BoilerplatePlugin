@@ -44,4 +44,8 @@ export default {
                     console.log('volume', this.player.getVolume(), this.player.isMuted());
                     if (retries > 10 || (
                         this.player.getVolume() > 0 &&
-                        !this.player.isM
+                        !this.player.isMuted()
+                    )) {
+                        clearInterval(intervalId);
+                    }
+                    this.
