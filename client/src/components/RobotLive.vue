@@ -52,4 +52,14 @@ export default {
                     this.player.unmute();
                 }, 100);
             }, 60000);
-        
+        }
+    }
+}
+</script>
+
+<style>
+.stream {
+    width: 100%;
+    height: 70%;
+}
+</style>
