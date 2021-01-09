@@ -5,4 +5,8 @@
                 v-on:click.stop="$emit('move-chosen', MovesToIndex.rock)"
                 large fab
             >
-                <v-icon 
+                <v-icon light x-large>fa-hand-rock</v-icon>
+            </v-btn>
+        </v-flex>
+        <v-flex xs4>
+            <v-btn
