@@ -12,4 +12,8 @@
             <v-btn
                 v-on:click.stop="$emit('move-chosen', MovesToIndex.paper)"
                 large fab
-         
+            >
+                <v-icon light x-large>fa-hand-paper</v-icon>
+            </v-btn>
+        </v-flex>
+  
