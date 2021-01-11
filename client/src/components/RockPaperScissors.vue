@@ -18,4 +18,8 @@
         </v-flex>
         <v-flex xs4>
             <v-btn
-                v-on:click.stop="$emit('move-chosen', MovesToIndex.sci
+                v-on:click.stop="$emit('move-chosen', MovesToIndex.scissors)"
+                large fab
+            >
+                <v-icon light x-large class="fa-rotate-90">fa-hand-scissors</v-icon>
+    
