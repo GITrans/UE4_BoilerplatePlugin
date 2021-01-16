@@ -30,4 +30,10 @@
 <script>
 import { MovesToIndex } from '../constants';
 
-// class="fa-flip-hori
+// class="fa-flip-horizontal"
+export default {
+    data: () => ({
+        MovesToIndex,
+    }),
+}
+</script>
