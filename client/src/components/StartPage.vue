@@ -1,2 +1,7 @@
 <template>
-        <v-l
+        <v-layout
+            align-center
+            column
+            justify-center
+            class="mrg-top"
+ 
