@@ -11,4 +11,7 @@
                 height="300px"
                 max-height="300px"
                 width="300px"
-                aspe
+                aspect-ratio="1"
+                class="margin"
+            ></v-img>
+            <div class="display-2">Ready to 
