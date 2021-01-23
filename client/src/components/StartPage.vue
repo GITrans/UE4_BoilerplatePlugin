@@ -14,4 +14,6 @@
                 aspect-ratio="1"
                 class="margin"
             ></v-img>
-            <div class="display-2">Ready to 
+            <div class="display-2">Ready to play?</div>
+            <div class="subheading font-italic">(And may the Tokens be with you!)</div>
+  
