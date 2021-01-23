@@ -16,4 +16,7 @@
             ></v-img>
             <div class="display-2">Ready to play?</div>
             <div class="subheading font-italic">(And may the Tokens be with you!)</div>
-  
+            <v-btn
+                large fab
+                v-on:click="$emit('go')"
+            >Go!</v-btn>
