@@ -20,3 +20,14 @@
                 large fab
                 v-on:click="$emit('go')"
             >Go!</v-btn>
+        </v-layout>
+</template>
+
+<style>
+.mrg-top {
+    margin-top: 5%;
+}
+.fit {
+    height: 100%;
+}
+</style>
