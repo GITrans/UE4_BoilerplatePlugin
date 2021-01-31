@@ -2,4 +2,7 @@
     <div class="text-xs-center">
         <v-progress-circular
             :rotate="-90"
-            :size="s
+            :size="size"
+            :width="15"
+            :value="value"
+            :color="c
