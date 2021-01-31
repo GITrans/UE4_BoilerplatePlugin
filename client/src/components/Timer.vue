@@ -5,4 +5,11 @@
             :size="size"
             :width="15"
             :value="value"
-            :color="c
+            :color="color"
+        >
+            {{ getTimeLeft(value) }}
+        </v-progress-circular>
+    </div>
+</template>
+
+<scri
