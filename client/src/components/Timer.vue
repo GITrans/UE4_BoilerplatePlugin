@@ -23,3 +23,9 @@ export default {
             type: String,
             default: 'black',
         },
+        startValue: {
+            type: Number,
+            default: 0,
+        },
+        size: {
+            type: Str
