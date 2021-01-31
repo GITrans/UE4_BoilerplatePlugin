@@ -12,4 +12,9 @@
     </div>
 </template>
 
-<scri
+<script>
+export default {
+    props: {
+        time: {
+            type: Number,
+            default: 0
