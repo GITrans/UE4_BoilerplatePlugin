@@ -28,4 +28,12 @@ export default {
             default: 0,
         },
         size: {
-            type: Str
+            type: String,
+            default: "100",
+        }
+    },
+    data() {
+        return {
+            value: 0,
+            interval: null,
+       
