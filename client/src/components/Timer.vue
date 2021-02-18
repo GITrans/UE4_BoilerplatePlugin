@@ -36,4 +36,11 @@ export default {
         return {
             value: 0,
             interval: null,
-       
+            intervalTime: 1000,
+        }
+    },
+    beforeDestroy () {
+        this.clearInterval();
+    },
+    mounted() {
+        this.
