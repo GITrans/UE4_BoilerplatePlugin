@@ -53,3 +53,7 @@ export default {
             this.setValue();
             this.setTimer();
         }
+    },
+    methods: {
+        setValue() {
+            this.value = this.msecondsToValue(new Da
