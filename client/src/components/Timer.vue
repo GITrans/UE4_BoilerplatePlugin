@@ -48,4 +48,8 @@ export default {
         this.setTimer();
     },
     watch: {
-        startValue() 
+        startValue() {
+            this.clearInterval();
+            this.setValue();
+            this.setTimer();
+        }
