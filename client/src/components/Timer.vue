@@ -72,4 +72,7 @@ export default {
 
             this.interval = setInterval(() => {
                 if (this.value >= 100) {
-                    this.$emit('t
+                    this.$emit('timer-end');
+                    this.clearInterval();
+                    return;
+             
