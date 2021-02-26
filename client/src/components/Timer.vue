@@ -75,4 +75,8 @@ export default {
                     this.$emit('timer-end');
                     this.clearInterval();
                     return;
-             
+                }
+                this.value += this.valueIncrement;
+            }, this.intervalTime);
+        },
+       
