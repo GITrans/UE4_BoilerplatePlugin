@@ -79,4 +79,7 @@ export default {
                 this.value += this.valueIncrement;
             }, this.intervalTime);
         },
-       
+        clearInterval() {
+            if (this.interval) clearInterval(this.interval);
+        },
+        g
