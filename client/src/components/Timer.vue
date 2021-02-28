@@ -84,4 +84,7 @@ export default {
         },
         getTimeLeft: function(value) {
             let mseconds = this.valueToMseconds(value || this.value);
-            return this.formatT
+            return this.formatTime(this.time - mseconds);
+        },
+        formatTime: (mseconds) => {
+            let seconds = Math.max(Math.fl
