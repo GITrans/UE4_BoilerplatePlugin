@@ -107,3 +107,44 @@
       },
       hasEnded() { // Returns true if the live stream or VOD has ended; otherwise, false.
         return player.getEnded();
+      },
+      getVolume() { // Returns the volume level, a value between 0.0 and 1.0.
+        return player.getVolume();
+      },
+      isMuted() { // Returns true if the player is muted; otherwise, false.
+        return player.getMuted();
+      },
+      mute() { // Mutes the player.
+        player.setMuted(true);
+      },
+      unmute() { // Unmutes the player.
+        player.setMuted(false);
+      },
+      checkChannel() {
+        return this.channel === player.getChannel();
+      },
+      checkVideo() {
+        return this.video = player.getVideo();
+      },
+    },
+    watch: {
+      channel(newChannel) {
+        player.setChannel(newChannel);
+      },
+      collection(newCollection) {
+        player.setCollection(newCollection);
+      },
+      video(newVideo) {
+        player.setVideo(newVideo);
+      },
+      volume(newVolume) {
+        player.setVolume(newVolume);
+      },
+      quality(newQuality) {
+        if (player.getQualities().indexOf(newQuality) !== -1) {
+          player.setQuality(newQuality);
+        }
+      },
+    },
+  };
+</script>
