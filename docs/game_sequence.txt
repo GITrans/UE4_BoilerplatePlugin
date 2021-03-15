@@ -1,0 +1,25 @@
+
+participant User
+participant UserRaiden
+participant GameClient
+participant GameGuardianServer
+participant GameGuardianRaiden
+participant Robot1
+participant Robot2
+
+User -> GameClient: play(player, move)
+
+Note over GameClient: moveHash = sha3(\n userEthAddress, gameId, \nplayerId, moveId,\n paymentAmount, secret)
+GameClient -> GameGuardianServer: initMove(\n playerId, userEthAddress,\n moveHash)
+GameGuardianServer -> GameClient: paymentIdentifier
+Note over GameGuardianServer: store move \n data & paymentIdentifier
+
+GameClient -> UserRaiden: pay(paymentAmount,\n GameGuardianRaiden address,\n paymentIdentifier)
+UserRaiden -> GameGuardianRaiden: pay(paymentAmount, paymentIdentifier)
+
+Note over GameClient: wait until game is closed
+GameClient -> GameGuardianServer: revealMove(move,\n secret, paymentAmount)
+Note over GameGuardianServer: check moveHash
+
+Note over GameClient: wait until game has ended
+GameClient -> GameGuardianServer: revealGame(gameId)
