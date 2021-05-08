@@ -38,4 +38,5 @@
       "31": "{\"gameTime\":120000,\"resolveTime\":120000,\"startTime\":\"2018-12-03T23:33:57.386Z\",\"inProgress\":false,\"_id\":31}",
       "32": "{\"gameTime\":120000,\"resolveTime\":120000,\"startTime\":\"2018-12-03T23:38:08.150Z\",\"inProgress\":false,\"_id\":32,\"winningMove\":\"paper\",\"move1\":\"paper\",\"move2\":\"paper\",\"amount\":90000,\"players\":2}",
       "33": "{\"gameTime\":120000,\"resolveTime\":120000,\"startTime\":\"2018-12-04T00:06:30.124Z\",\"inProgress\":false,\"_id\":33}",
-      "34": "{\"gameTime\":120000,\"resolveTime\":120000,\"star
+      "34": "{\"gameTime\":120000,\"resolveTime\":120000,\"startTime\":\"2018-12-04T00:10:38.321Z\",\"inProgress\":false,\"_id\":34}",
+      "35": "{\"gameTime\":6
