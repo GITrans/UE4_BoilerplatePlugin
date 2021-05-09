@@ -40,4 +40,4 @@
       "33": "{\"gameTime\":120000,\"resolveTime\":120000,\"startTime\":\"2018-12-04T00:06:30.124Z\",\"inProgress\":false,\"_id\":33}",
       "34": "{\"gameTime\":120000,\"resolveTime\":120000,\"startTime\":\"2018-12-04T00:10:38.321Z\",\"inProgress\":false,\"_id\":34}",
       "35": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-04T00:17:49.793Z\",\"inProgress\":false,\"_id\":35,\"winningMove\":\"paper\",\"move1\":\"paper\",\"move2\":\"scissors\",\"amount\":90000,\"players\":2}",
-      "36": "{\"gam
+      "36": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-04T00:26:52.070Z\",\"inProgress\":false,\"_id\":36,\"win
