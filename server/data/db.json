@@ -53,4 +53,5 @@
       "46": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-05T01:18:44.953Z\",\"inProgress\":false,\"_id\":46,\"winningMove\":\"scissors\",\"move1\":\"scissors\",\"move2\":\"scissors\",\"amount\":0,\"players\":1}",
       "47": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-05T01:21:01.931Z\",\"inProgress\":false,\"_id\":47,\"winningMove\":\"scissors\",\"move1\":\"scissors\",\"move2\":\"scissors\",\"amount\":0,\"players\":1}",
       "48": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T10:10:35.639Z\",\"inProgress\":false,\"_id\":48,\"winningMove\":\"scissors\",\"move1\":\"scissors\",\"move2\":\"scissors\",\"amount\":0,\"players\":1}",
-      "49": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T10:17:02.006Z\
+      "49": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T10:17:02.006Z\",\"inProgress\":false,\"_id\":49}",
+      "50": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018
