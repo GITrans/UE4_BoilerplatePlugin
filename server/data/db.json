@@ -59,4 +59,4 @@
       "52": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T13:27:58.885Z\",\"inProgress\":false,\"_id\":52}",
       "53": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T14:49:00.815Z\",\"inProgress\":false,\"_id\":53}",
       "54": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T14:56:28.858Z\",\"inProgress\":false,\"_id\":54,\"winningMove\":\"scissors\",\"move1\":\"scissors\",\"move2\":\"scissors\",\"amount\":0,\"players\":2}",
-     
+      "55": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T15:03:49.389Z\",\"inProgress\":f
