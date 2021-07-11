@@ -65,4 +65,5 @@
       "58": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T15:25:48.669Z\",\"inProgress\":false,\"_id\":58,\"winningMove\":\"scissors\",\"move1\":\"scissors\",\"move2\":\"scissors\",\"amount\":0,\"players\":2}",
       "59": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T15:28:40.256Z\",\"inProgress\":false,\"_id\":59,\"winningMove\":\"scissors\",\"move1\":\"scissors\",\"move2\":\"scissors\",\"amount\":0,\"players\":2}",
       "60": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-06T15:32:54.441Z\",\"inProgress\":false,\"_id\":60,\"winningMove\":\"paper\",\"move1\":\"rock\",\"move2\":\"paper\",\"amount\":90000,\"players\":2}",
-      "61": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-07T00:07:05.248Z\",\"inProgress\":false,\"_id\":61,\"winningMove\":\"scissors\",\"move1\":\"paper\",\"m
+      "61": "{\"gameTime\":60000,\"resolveTime\":60000,\"startTime\":\"2018-12-07T00:07:05.248Z\",\"inProgress\":false,\"_id\":61,\"winningMove\":\"scissors\",\"move1\":\"paper\",\"move2\":\"scissors\",\"amount\":90000,\"players\":2}",
+      "62": "{\"gameTime\":60000,\"resolveTime\":60000,\
