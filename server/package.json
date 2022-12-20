@@ -1,3 +1,9 @@
 {
   "name": "cryptowars",
-  "versi
+  "version": "1.0.0",
+  "description": "cryptowars",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "mai
