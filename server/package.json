@@ -31,4 +31,13 @@
     "prepublishOnly": "npm run test"
   },
   "repository": {
- 
+    "type": "git"
+  },
+  "author": "",
+  "license": "",
+  "files": [
+    "README.md",
+    "index.js",
+    "index.d.ts",
+    "dist/src",
+    
