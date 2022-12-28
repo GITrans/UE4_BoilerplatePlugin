@@ -40,4 +40,9 @@
     "index.js",
     "index.d.ts",
     "dist/src",
-    
+    "dist/index*",
+    "src"
+  ],
+  "dependencies": {
+    "@loopback/boot": "^1.0.1",
+    "@loopback/co
