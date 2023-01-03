@@ -9,4 +9,9 @@ export class CryptowarsApplication extends BootMixin(
   ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
-    
+    super(options);
+
+    // Set up the custom sequence
+    this.sequence(MySequence);
+
+    this.projectRoot = 
