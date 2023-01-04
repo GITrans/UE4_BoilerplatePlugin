@@ -20,4 +20,9 @@ export class CryptowarsApplication extends BootMixin(
       controllers: {
         // Customize ControllerBooter Conventions here
         dirs: ['controllers'],
-        extensions: ['.cont
+        extensions: ['.controller.js'],
+        nested: true,
+      },
+    };
+  }
+}
