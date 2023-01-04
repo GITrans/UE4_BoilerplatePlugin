@@ -18,4 +18,6 @@ export class CryptowarsApplication extends BootMixin(
     // Customize @loopback/boot Booter Conventions here
     this.bootOptions = {
       controllers: {
- 
+        // Customize ControllerBooter Conventions here
+        dirs: ['controllers'],
+        extensions: ['.cont
