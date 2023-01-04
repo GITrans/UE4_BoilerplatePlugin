@@ -14,4 +14,8 @@ export class CryptowarsApplication extends BootMixin(
     // Set up the custom sequence
     this.sequence(MySequence);
 
-    this.projectRoot = 
+    this.projectRoot = __dirname;
+    // Customize @loopback/boot Booter Conventions here
+    this.bootOptions = {
+      controllers: {
+ 
