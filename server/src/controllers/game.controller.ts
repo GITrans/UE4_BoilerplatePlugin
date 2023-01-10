@@ -160,3 +160,119 @@ export class GameController {
             paper: 0,
             scissors: 0,
         }
+    };
+    let sorted_moves_1: any = [], sorted_moves_2: any = [];
+    let winningMove: string, move1: string, move2: string;
+    let gameUpdate: Partial<Game>;
+    let raidenPayment: any, raidenPayments: any;
+
+    game = await this.gameRepository.findById(id);
+    if (!game) {
+        throw new HttpErrors.NotFound('Game not found');
+    }
+
+    currentTime = new Date().getTime();
+    deltaTime = game.gameTime + game.resolveTime;
+    resolveTime = game.startTime.getTime() + deltaTime;
+
+    if (
+        game.winningMove ||
+        game.inProgress ||
+        currentTime < resolveTime ||
+        currentTime > resolveTime + deltaTime
+    ) {
+        return game;
+    }
+
+    moveController = new MoveController(await this.gameRepository.move);
+
+    moves = await moveController.find({where: {gameId: id}, order: ["_id ASC"]});
+
+    if (moves.length == 0) {
+        return game;
+    }
+
+    raidenPayments = await this.getRaidenPayments(TOKEN).catch((error) => {
+        console.log(error);
+    });
+    for (let i = 0; i < moves.length; i++) {
+        let sentMove: Move = moves[i];
+
+        if (sentMove.amount && sentMove.move && sentMove.amount >= game.move_amount) {
+            raidenPayment = raidenPayments[0].find((payment: any) => {
+                return payment.identifier === sentMove.paymentIdentifier;
+            });
+            if (raidenPayment) {
+                total_amount += sentMove.amount;
+                move_count[sentMove.playerId][sentMove.move] += 1;
+                validMoves.push(sentMove);
+            }
+        }
+    }
+    console.log('total_amount', total_amount);
+    console.log('move_count', move_count);
+    sorted_moves_1 = Object.entries(move_count['1']).sort((a: any, b: any) => {
+        return a[1] - b[1];
+    });
+    sorted_moves_2 = Object.entries(move_count['2']).sort((a: any, b: any) => {
+        return a[1] - b[1];
+    });
+    console.log('sorted_moves_1', sorted_moves_1);
+    console.log('sorted_moves_2', sorted_moves_2);
+
+    move1 = sorted_moves_1[2][1] > 0 ? sorted_moves_1[2][0] : null;
+    move2 = sorted_moves_2[2][1] > 0 ? sorted_moves_2[2][0] : RockPaperScissorsGetLoser[move1];
+
+    // If we have one player, make sure he wins
+    if (!move1) {
+        move1 = RockPaperScissorsGetLoser[move2];
+    }
+    winningMove = RockPaperScissorsGetLoser[move1] === move2 ? move1 : move2;
+
+    validMoves.forEach((move: Move) => {
+        // We reward both players if their final moves are the same
+        if (move.move === winningMove) {
+            winningMoves.push(move);
+        }
+    });
+
+    guardian_amount = total_amount / 10;
+    total_amount -= guardian_amount;
+    winner_amount = total_amount / winningMoves.length;
+
+    gameUpdate = {
+        winningMove,
+        player1: <PlayerResult> {
+            count: sorted_moves_1[0][1] + sorted_moves_1[1][1] + sorted_moves_1[2][1],
+            move: move1,
+            move_count: move_count['1'],
+        },
+        player2: <PlayerResult> {
+            count: sorted_moves_2[0][1] + sorted_moves_2[1][1] + sorted_moves_2[2][1],
+            move: move2,
+            move_count: move_count['2'],
+        },
+        amount: winner_amount,
+        amountGuardian: guardian_amount,
+        players: moves.length,
+    };
+    console.log('--gameUpdate', gameUpdate);
+    this.updateById(id, gameUpdate);
+
+    // Make Raiden payments to winners
+    winningMoves.forEach((move: Move) => {
+        this.sendRaidenPayment(TOKEN, move.userAddress, winner_amount, move.paymentIdentifier).catch((error) => {
+            console.log(error);
+        });
+    });
+
+    this.sendRobotCommands(move1, move2, winningMove).catch((error) => {
+        console.log(error);
+    });
+
+    return game;
+  }
+
+  @post('/game/{id}/move', {
+    responses: {
+      '200': {
