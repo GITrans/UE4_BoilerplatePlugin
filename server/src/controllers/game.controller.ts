@@ -276,3 +276,124 @@ export class GameController {
   @post('/game/{id}/move', {
     responses: {
       '200': {
+        description: 'Game model instance',
+        content: {'application/json': {schema: {'x-ts-type': Move}}},
+      },
+    },
+  })
+  async createMove(
+    @param.path.string('id') id: string,
+    @requestBody() move: Move,
+  ): Promise<Move> {
+    let moveController, game;
+
+    moveController = new MoveController(await this.gameRepository.move);
+
+    game = await this.findById(id);
+    if (!game) {
+        throw new HttpErrors.NotFound('No game found with this id.');
+    }
+
+    move.gameId = id;
+    let count = await moveController.count();
+    move.paymentIdentifier = count.count + 1;
+    move.amount = game.move_amount;
+    return await moveController.create(move);
+  }
+
+  @patch('/game/{id}', {
+    responses: {
+      '204': {
+        description: 'Game PATCH success',
+      },
+    },
+  })
+  async updateById(
+    @param.path.string('id') id: string,
+    @requestBody() game: Partial<Game>,
+  ): Promise<void> {
+    await this.gameRepository.updateById(id, game);
+  }
+
+  @del('/game/{id}', {
+    responses: {
+      '204': {
+        description: 'Game DELETE success',
+      },
+    },
+  })
+  async deleteById(@param.path.string('id') id: string): Promise<void> {
+    await this.gameRepository.deleteById(id);
+  }
+
+  async getRaidenPayments(token: string): Promise<any> {
+    const context: Context = new Context();
+    context.bind('datasources.raiden').to(RaidenDataSource);
+    context.bind('controllers.Raiden').toClass(Raiden);
+    const raiden = await context.get<Raiden>(
+    'controllers.Raiden',
+);
+    return await raiden.raiden.payments(token);
+  }
+
+  async sendRaidenPayment(token: string, target: string, amount: number, identifier: number): Promise<any> {
+    const context: Context = new Context();
+    context.bind('datasources.raiden').to(RaidenDataSource);
+    context.bind('controllers.Raiden').toClass(Raiden);
+    const raiden = await context.get<Raiden>(
+    'controllers.Raiden',
+    );
+    return await raiden.raiden.pay(token, target, amount, identifier);
+  }
+
+  async sendRobotCommand(command: string): Promise<any> {
+    const context: Context = new Context();
+    context.bind('datasources.robot').to(RobotDataSource);
+    context.bind('controllers.Robot').toClass(Robot);
+    const robot = await context.get<Robot>(
+    'controllers.Robot',
+    );
+    console.log('robot', command);
+    return await robot.robot[command]();
+  }
+
+  async sendRobotWins(player: string, timeout: number): Promise<any> {
+    return this.sendRobotCommand(`${player}_wins`).then(() => {
+        return this.wait(timeout);
+    }).then(() => {
+        return this.sendRobotCommand(`${player}_stop`);
+    });
+  }
+
+  async sendRobotLoses(player: string, timeout: number): Promise<any> {
+    return this.sendRobotCommand(`${player}_loses`).then(() => {
+        return this.wait(timeout);
+    });
+  }
+
+  async sendRobotCommands(
+      move1: string,
+      move2: string,
+      winningMove: string,
+  ): Promise<any> {
+    let winner: string, loser: string, win_wait: number, lose_wait: number;
+    let player1_win_wait: number = 10800;
+    let player2_win_wait: number = 6610;
+
+    // TODO: check if connected, otherwise connect
+    lose_wait = 4000;
+    if (move1 === winningMove) {
+        winner = IndexToPlayer[1];
+        loser = IndexToPlayer[2];
+        win_wait = player1_win_wait;
+    } else {
+        winner = IndexToPlayer[2];
+        loser = IndexToPlayer[1];
+        win_wait = player2_win_wait;
+    }
+
+    return await this.wait(2000).then(() => {
+        return this.sendRobotCommand(`${IndexToPlayer[1]}_${move1}`)
+    }).then(() => {
+        return this.wait(2500);
+    }).then(() => {
