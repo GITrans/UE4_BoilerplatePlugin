@@ -397,3 +397,33 @@ export class GameController {
     }).then(() => {
         return this.wait(2500);
     }).then(() => {
+        return this.sendRobotCommand(`${IndexToPlayer[2]}_${move2}`);
+    }).then(() => {
+        return this.wait(2500);
+    }).then(() => {
+        if (move1 === move2) {
+            return this.sendRobotWins(loser, player2_win_wait);
+        } else {
+            return this.sendRobotLoses(loser, lose_wait);
+        }
+    }).then(() => {
+        return this.sendRobotWins(winner, win_wait);
+    }).then(() => {
+        return this.wait(1000);
+    }).then(() => {
+        return this.sendRobotCommand(`${IndexToPlayer[1]}_stage`);
+    }).then(() => {
+        return this.sendRobotCommand(`${IndexToPlayer[2]}_stage`);
+    }).catch((error) => {
+        console.log(error);
+    });
+  }
+
+  async wait(timeout: number): Promise<any> {
+      return new Promise((resolve, reject) => {
+          setTimeout(function() {
+              resolve();
+          }, timeout);
+      });
+  }
+}
