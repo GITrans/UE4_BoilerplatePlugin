@@ -1,2 +1,5 @@
 export * from './ping.controller';
-export * from './game.control
+export * from './game.controller';
+export * from './move.controller';
+export * from './raiden.controller';
+export * from './robot.contro
