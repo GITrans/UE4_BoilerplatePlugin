@@ -5,4 +5,9 @@ import {inject} from '@loopback/context';
  * OpenAPI response for ping()
  */
 const PING_RESPONSE: ResponseObject = {
-  description:
+  description: 'Ping Response',
+  content: {
+    'application/json': {
+      schema: {
+        type: 'object',
+        prope
