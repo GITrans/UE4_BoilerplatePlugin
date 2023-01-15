@@ -113,3 +113,21 @@ export class MoveController {
     let moveHash: string;
 
     existentMove = await this.findById(id);
+    moveHash = web3Utils.soliditySha3(existentMove.userAddress, existentMove.gameId, existentMove.playerId, move.move, move.amount, move.secret);
+    if (existentMove.moveHash !== moveHash) {
+        throw new Error(`Stored move hash is not the same as the one computed from the provided move data ${move}`);
+    }
+    await this.moveRepository.updateById(id, move);
+  }
+
+  @del('/move/{id}', {
+    responses: {
+      '204': {
+        description: 'Move DELETE success',
+      },
+    },
+  })
+  async deleteById(@param.path.string('id') id: string): Promise<void> {
+    await this.moveRepository.deleteById(id);
+  }
+}
