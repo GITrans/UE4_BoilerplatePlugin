@@ -13,4 +13,8 @@ const PING_RESPONSE: ResponseObject = {
         properties: {
           greeting: {type: 'string'},
           date: {type: 'string'},
-          url: {type: 'string'}
+          url: {type: 'string'},
+          headers: {
+            type: 'object',
+            properties: {
+              'Content-Type': {type: 'string'},
