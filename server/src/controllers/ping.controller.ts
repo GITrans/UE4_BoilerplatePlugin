@@ -18,3 +18,11 @@ const PING_RESPONSE: ResponseObject = {
             type: 'object',
             properties: {
               'Content-Type': {type: 'string'},
+            },
+            additionalProperties: true,
+          },
+        },
+      },
+    },
+  },
+};
