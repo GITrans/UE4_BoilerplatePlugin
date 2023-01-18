@@ -35,4 +35,9 @@ export class PingController {
 
   // Map to `GET /ping`
   @get('/ping', {
-    respon
+    responses: {
+      '200': PING_RESPONSE,
+    },
+  })
+  ping(): object {
+    // Reply with a greeting, the curren
