@@ -69,3 +69,48 @@ export class Game extends Entity {
     default: new Date(),
   })
   startTime: Date;
+
+  @property({
+    type: 'object',
+  })
+  player1: PlayerResult;
+
+  @property({
+    type: 'object',
+  })
+  player2: PlayerResult;
+
+  @property({
+    type: 'string',
+  })
+  winningMove: string;
+
+  // Each winner gets this amount
+  @property({
+    type: 'number',
+  })
+  amount: number;
+
+  @property({
+    type: 'number',
+  })
+  amountGuardian: number;
+
+  @property({
+    type: 'number',
+  })
+  players: number;
+
+  @hasMany(() => Move, {keyTo: 'gameId'})
+  moves?: Move[];
+
+  @property({
+    type: 'boolean',
+    default: false,
+  })
+  inProgress: boolean;
+
+  constructor(data?: Partial<Game>) {
+    super(data);
+  }
+}
