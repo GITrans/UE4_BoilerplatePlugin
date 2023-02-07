@@ -117,3 +117,65 @@ export const RobotDataSource: juggler.DataSource = new juggler.DataSource({
     {
       template: {
         method: 'GET',
+        url: `${YodaHost}/yoda/pres`,
+      },
+      functions: {
+        yoda_pres: [],
+      },
+    },
+    {
+      template: {
+        method: 'GET',
+        url: `${YodaHost}/yoda/wins`,
+      },
+      functions: {
+        yoda_wins: [],
+      },
+    },
+    {
+      template: {
+        method: 'GET',
+        url: `${YodaHost}/yoda/loses`,
+      },
+      functions: {
+        yoda_loses: [],
+      },
+    },
+    {
+      template: {
+        method: 'GET',
+        url: `${YodaHost}/yoda/stage`,
+      },
+      functions: {
+        yoda_stage: [],
+      },
+    },
+    {
+      template: {
+        method: 'GET',
+        url: `${YodaHost}/yoda/rock`,
+      },
+      functions: {
+        yoda_rock: [],
+      },
+    },
+    {
+      template: {
+        method: 'GET',
+        url: `${YodaHost}/yoda/paper`,
+      },
+      functions: {
+        yoda_paper: [],
+      },
+    },
+    {
+      template: {
+        method: 'GET',
+        url: `${YodaHost}/yoda/scissors`,
+      },
+      functions: {
+        yoda_scissors: [],
+      },
+    },
+  ],
+});
