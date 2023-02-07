@@ -39,3 +39,4 @@ export const RaidenDataSource: juggler.DataSource = new juggler.DataSource({
       },
     },
   ],
+});
