@@ -13,3 +13,11 @@ export class Move extends Entity {
     type: 'string',
     required: true,
   })
+  playerId: string;
+
+  @property({
+    type: 'string',
+  })
+  gameId: string;
+
+  @propert
