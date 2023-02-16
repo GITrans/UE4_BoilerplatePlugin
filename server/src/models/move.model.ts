@@ -27,4 +27,15 @@ export class Move extends Entity {
   userAddress: string;
 
   @property({
+    type: 'number',
+  })
+  paymentIdentifier: number;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  moveHash: string;
+
+  @property({
     type
