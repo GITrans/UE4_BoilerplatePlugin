@@ -47,4 +47,12 @@ export class Move extends Entity {
   })
   secret?: string;
 
-  
+  @property({
+    type: 'number',
+  })
+  amount: number;
+
+  @property({
+    type: 'date',
+    generated: true,
+ 
