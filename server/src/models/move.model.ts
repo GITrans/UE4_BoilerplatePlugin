@@ -38,4 +38,13 @@ export class Move extends Entity {
   moveHash: string;
 
   @property({
-    type
+    type: 'string',
+  })
+  move?: string;
+
+  @property({
+    type: 'string',
+  })
+  secret?: string;
+
+  
