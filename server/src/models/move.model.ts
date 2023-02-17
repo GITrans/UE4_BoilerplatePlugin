@@ -55,4 +55,9 @@ export class Move extends Entity {
   @property({
     type: 'date',
     generated: true,
- 
+    default: new Date(),
+  })
+  timestamp: Date;
+
+  constructor(data?: Partial<Move>) {
+    super
