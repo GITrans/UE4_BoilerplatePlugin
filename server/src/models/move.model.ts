@@ -60,4 +60,6 @@ export class Move extends Entity {
   timestamp: Date;
 
   constructor(data?: Partial<Move>) {
-    super
+    super(data);
+  }
+}
