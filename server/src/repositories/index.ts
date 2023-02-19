@@ -1,2 +1,2 @@
 export * from './game.repository';
-export * from './move.repos
+export * from './move.repository';
