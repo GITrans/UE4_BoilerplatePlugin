@@ -18,4 +18,9 @@ export class MySequence implements SequenceHandler {
     @inject(SequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
     @inject(SequenceActions.INVOKE_METHOD) protected invoke: InvokeMethod,
     @inject(SequenceActions.SEND) public send: Send,
-    @inj
+    @inject(SequenceActions.REJECT) public reject: Reject,
+  ) {}
+
+  async handle(context: RequestContext) {
+    try {
+      const {
