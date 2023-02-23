@@ -7,4 +7,9 @@ import {
   RequestContext,
   RestBindings,
   Send,
-  Seq
+  SequenceHandler,
+} from '@loopback/rest';
+
+const SequenceActions = RestBindings.SequenceActions;
+
+export class M
