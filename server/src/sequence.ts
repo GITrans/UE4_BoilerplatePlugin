@@ -23,4 +23,6 @@ export class MySequence implements SequenceHandler {
 
   async handle(context: RequestContext) {
     try {
-      const {
+      const {request, response} = context;
+      const route = this.findRoute(request);
+      const args = await this.parseParams(request
