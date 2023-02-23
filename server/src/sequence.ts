@@ -14,4 +14,6 @@ const SequenceActions = RestBindings.SequenceActions;
 
 export class MySequence implements SequenceHandler {
   constructor(
-    @inject(SequenceActions.FIND_ROUTE) protected findRoute: FindR
+    @inject(SequenceActions.FIND_ROUTE) protected findRoute: FindRoute,
+    @inject(SequenceActions.PARSE_PARAMS) protected parseParams: ParseParams,
+    @inject(SequenceActions.INVOKE_METHOD) 
